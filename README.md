@@ -11,7 +11,7 @@ A web application that displays the stock market sentiment from Alpha Vantage an
 
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/PBJswich/sentiment-analysis.git
    ```
 2. Install the required dependencies:
    ```bash
