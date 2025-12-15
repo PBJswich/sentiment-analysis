@@ -38,8 +38,12 @@ def get_stock_news():
         response.raise_for_status()  
         data = response.json()
         articles = []
+        counter = 0
         for item in data['feed']:
-            if item['source'] == "Motley Fool":
+            # if counter < 36:
+            #     counter += 1
+            #     continue
+            if item['source'] == "The Motley Fool":
                 continue
             sentiment = "Neutral"
             if item['ticker_sentiment']:
